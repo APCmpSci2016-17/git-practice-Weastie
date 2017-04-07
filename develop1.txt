@@ -1,0 +1,14 @@
+git checkout master
+# switch to maste branch
+git branch dgit evelop newfeature
+# delete develop and newfeature branch
+git push origin :develop :newfeature
+# push the deleted branches
+git tag -d V0.1
+# delete the V0.1 tag
+git push origin :V0.1
+# push the deleted tag
+git reset --hard <last commit ID>
+# reset to last commid
+git push --force
+# push the reset to the server
